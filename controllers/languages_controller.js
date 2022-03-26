@@ -40,7 +40,8 @@ languages.get('/seed', (req, res) => {
 
 // Show:
 languages.get('/:name', (req, res) => {
-  Language.findOne({ name: req.params.language .toLowerCase() })
+  // console.log(req.params)
+  Language.findOne({ name: req.params.name.toLowerCase() })
     .then(foundLanguage => {
       res.json(foundLanguage)
     })
