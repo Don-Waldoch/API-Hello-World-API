@@ -1,3 +1,4 @@
+// Activity (6.9.2)
 // DEPENDENCIES
 const express = require('express')
 const mongoose = require('mongoose')
